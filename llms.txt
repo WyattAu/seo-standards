@@ -1,0 +1,14 @@
+> llms.txt — WyattAu seo-standards canon. The authoritative technique
+> list for search and AI-engine visibility. Consume SEO-CORE.md for
+> the canon and references/ for deep practice.
+
+# seo-standards
+
+- [SEO-CORE](SEO-CORE.md): the canon — 80 techniques across 7 pillars, 8 named refusals, per 2026-11 standards
+- [Authority](references/authority.md): DR/DA mechanics and the link-acquisition playbook in yield order
+- [Surfaces](references/surfaces.md): the 2026 SERP catalog, AI answer surfaces, per-bot crawler defaults
+- [GEO/AEO](references/geo-aeo.md): citability checklist, llms.txt practice, training vs retrieval policy
+- [Technical](references/technical.md): audit order, schema catalog, performance floors, migrations
+- [Content](references/content.md): briefs, E-E-A-T as evidence, information gain, pruning
+- [Measurement](references/measurement.md): fixed cadence, causality rules
+- [Risks](references/risks.md): 2026 spam policies, recovery paths, standing monitors
