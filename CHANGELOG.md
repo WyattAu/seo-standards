@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## 2026-11-14
+- route.py: task-keyword traversal of the technique catalog + Makefile (lint/check/route/ci); mechanical gates per context-standards routing-contract.
 
 - Canon founded: SEO-CORE (80 techniques, 7 pillars, 8 refusals),
   references/{technical,content,geo-aeo,authority,surfaces,measurement,risks},

@@ -12,3 +12,4 @@ normative. Rules for agents editing this repo:
 5. Date-stamped changes in CHANGELOG.md; pillar-level changes need an
    adr/ entry.
 6. llms.txt regenerates whenever SEO-CORE structure changes.
+7. Task-keyword technique lookups go through `scripts/route.py --task` (context-standards routing-contract); `make ci` passes before push.
