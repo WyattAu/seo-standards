@@ -30,7 +30,7 @@ def parse_core(path: Path) -> dict[str, list[dict]]:
     out: dict[str, list[dict]] = {}
     pillar = ""
     for line in path.read_text(encoding="utf-8").splitlines():
-        m = re.match(r"^## ([TCGASMR]) — ", line)
+        m = re.match(r"^## ([TCGASMR]): ", line)
         if m:
             pillar = m.group(1)
             out.setdefault(pillar, [])

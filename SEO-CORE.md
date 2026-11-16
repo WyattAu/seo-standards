@@ -30,7 +30,7 @@ accident. A technique that helps one audience and harms another is
 resolved in favor of the human reader, then the index, then the
 training surface.
 
-## T; Technical (crawl, index, render)
+## T: Technical (crawl, index, render)
 
 | # | Technique | Why |
 |---|---|---|
@@ -53,7 +53,7 @@ training surface.
 | T17 | Non-production environments `noindex` + credential-gated | staged content leaking into the index is self-inflicted |
 | T18 | 404/410 UX: helpful not-found pages; internal links to removed content cleaned within one sprint | rot spreads through link graphs |
 
-## C; Content and intent
+## C: Content and intent
 
 | # | Technique | Why |
 |---|---|---|
@@ -73,7 +73,7 @@ training surface.
 | C14 | Multimedia where intent demands it (images, video, tools) | surface diversity in the SERP |
 | C15 | UGC (forums, comments) only with moderation and structured markup | Google surfaces moderated UGC; unmoderated UGC is a spam vector |
 
-## G; GEO/AEO (AI-engine visibility)
+## G: GEO/AEO (AI-engine visibility)
 
 | # | Technique | Why |
 |---|---|---|
@@ -86,7 +86,7 @@ training surface.
 | G7 | Citation-share tracking per engine per target query | visibility you do not measure does not compound |
 | G8 | Passages engineered for extraction (definitions, tables, numbered methods) | RAG retrieval is passage-level |
 
-## A; Authority (DR/DA and links)
+## A: Authority (DR/DA and links)
 
 DR (Ahrefs), DA (Moz), TF (Majestic) are **third-party proxies computed
 from link indexes**; none are Google inputs, and chasing the meter
@@ -112,7 +112,7 @@ compounds: independent pages choosing to cite you.
 | A14 | Architecture as authority: hubs absorb and distribute internal authority deliberately | internal link equity is the only equity you control fully |
 | A15 | Digital-footprint consistency: same name, address, profile set everywhere | entity trust is the slow compounder |
 
-## S; Surfaces (the 2026 SERP)
+## S: Surfaces (the 2026 SERP)
 
 | # | Surface | Eligibility lever |
 |---|---|---|
@@ -126,7 +126,7 @@ compounds: independent pages choosing to cite you.
 | S8 | Top Stories | news sitemap + Article schema + Publisher entity |
 | S9 | Discussions and forums | moderated UGC (ForumPosting/QAPage) |
 
-## M; Measurement
+## M: Measurement
 
 | # | Practice | Cadence |
 |---|---|---|
@@ -139,7 +139,7 @@ compounds: independent pages choosing to cite you.
 | M7 | Log-file review on large sites | quarterly |
 | M8 | Conversion-weighted reporting: rankings are inputs; revenue is the output | every report |
 
-## R; Risk
+## R: Risk
 
 | # | Rule | Why |
 |---|---|---|
