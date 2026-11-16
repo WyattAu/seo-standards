@@ -1,4 +1,4 @@
-# GEO/AEO — being the cited source
+# GEO/AEO; being the cited source
 
 Search engines rank documents. Answer engines assemble passages. The
 unit of optimization shifts from the page to the **passage that a
@@ -15,7 +15,7 @@ retriever can lift and a model can quote without context**.
    voice.
 4. **Tables over prose for enumerable facts**; numbered steps for
    procedures; both extract cleanly.
-5. **Direct answers under question-shaped headings** — 40–60 words,
+5. **Direct answers under question-shaped headings**; 40–60 words,
    then depth.
 6. **Freshness in machine-readable form**: `dateModified` in schema,
    real feeds.
@@ -24,11 +24,11 @@ retriever can lift and a model can quote without context**.
 
 ## llms.txt practice
 
-- `/llms.txt`: short, curated, markdown — the canonical doc map with
+- `/llms.txt`: short, curated, markdown; the canonical doc map with
   one-line descriptions.
 - `/llms-full.txt`: the full corpus where volume warrants.
 - Keep both generated from the same source as the docs (a stale llms.txt
-  is worse than none — it teaches retrievers the site lies).
+  is worse than none; it teaches retrievers the site lies).
 
 ## Crawler policy
 
@@ -48,5 +48,5 @@ Training access and retrieval access are **different decisions**:
   record cited-domain share for the estate.
 - Track the query set itself as a versioned file; trends only mean
   something against a fixed set.
-- Preferred Sources adds a badge surface for opted-in users — adoption
+- Preferred Sources adds a badge surface for opted-in users; adoption
   is measurable via Google's publisher tooling, not via server logs.

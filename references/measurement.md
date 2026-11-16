@@ -1,4 +1,4 @@
-# Measurement — fixed cadence, readable causality
+# Measurement; fixed cadence, readable causality
 
 | Signal | Source | Cadence |
 |---|---|---|
@@ -18,7 +18,7 @@
    (rank trackers + GSC + peer reports) before changing anything.
 2. Changes ship one variable per page-group where possible; grouped
    launches record the grouping, or the readout is noise.
-3. Rankings are inputs, revenue is the output — every report ends in
+3. Rankings are inputs, revenue is the output; every report ends in
    conversion-weighted terms.
 4. Volatility weeks reward patience: 7-day windows are noise, 28-day
    comparisons are signal.

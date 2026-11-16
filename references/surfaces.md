@@ -1,4 +1,4 @@
-# Surfaces — the 2026 SERP catalog
+# Surfaces; the 2026 SERP catalog
 
 Eligibility levers for every Google surface that matters in 2026, plus
 the AI-engine answer surfaces. Verify current requirements against

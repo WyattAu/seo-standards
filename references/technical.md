@@ -1,4 +1,4 @@
-# Technical — the non-negotiables, in audit order
+# Technical; the non-negotiables, in audit order
 
 Diagnose in this order; technical failures mask everything downstream.
 
@@ -20,15 +20,15 @@ Diagnose in this order; technical failures mask everything downstream.
 | Home | Organization (+sameAs), WebSite (+SearchAction), LocalBusiness where physical | ProfilePage for founder entities |
 | Product/PDP | Product, Offer (price, currency, availability, priceValidUntil), Brand; MerchantReturnPolicy; OfferShippingDetails | AggregateRating (real mechanics only), Review, image gallery |
 | Article/guide | Article (+datePublished/dateModified, author ProfilePage) | Speakable, VideoObject where real |
-| FAQ | FAQPage | — (rich results restricted; keep for structure) |
-| How-to/tool | HowTo (visible steps only) | — |
+| FAQ | FAQPage |; (rich results restricted; keep for structure) |
+| How-to/tool | HowTo (visible steps only) |; |
 | Data/dataset pages | Dataset (+variableMeasured) | DataCatalog |
-| Collections | ItemList | — |
-| Breadcrumbs | BreadcrumbList | — (on every nested page) |
-| Events | Event | — |
+| Collections | ItemList |; |
+| Breadcrumbs | BreadcrumbList |; (on every nested page) |
+| Events | Event |; |
 
 Validation: rich-results test + schema validator in CI where possible.
-Marked-up content must be **visible on the page** — invisible markup is
+Marked-up content must be **visible on the page**; invisible markup is
 a policy surface.
 
 ## 3. Performance floors (field data, not lab)

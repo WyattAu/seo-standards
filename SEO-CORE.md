@@ -30,13 +30,13 @@ accident. A technique that helps one audience and harms another is
 resolved in favor of the human reader, then the index, then the
 training surface.
 
-## T — Technical (crawl, index, render)
+## T; Technical (crawl, index, render)
 
 | # | Technique | Why |
 |---|---|---|
 | T1 | `robots.txt` + per-page `meta robots` + `X-Robots-Tag` governed by one policy | three layers, one intent; accidental `noindex` on money pages is the classic outage |
 | T2 | XML sitemap, fresh, `<50k` URLs or split, referenced from robots.txt | discovery floor for new/deep URLs |
-| T3 | IndexNow key + push on sitemap change | instant Bing/Seznam/Yandex discovery; Google ignores it — do not expect parity |
+| T3 | IndexNow key + push on sitemap change | instant Bing/Seznam/Yandex discovery; Google ignores it; do not expect parity |
 | T4 | Canonical governance: self-canonical default, cross-domain canonicals only for syndication, parameter pages canonical to the clean URL | duplicate consolidation is a ranking input, not decoration |
 | T5 | hreflang cluster: reciprocal per-language URLs + `x-default`; directories not files | international targeting without duplicate dilution |
 | T6 | Status-code hygiene: soft-404s hunted, `410` for intentionally gone content, `301` (not `302`) for permanence, redirect chains flattened to one hop | wasted crawl budget + lost signals live in the redirects table |
@@ -53,7 +53,7 @@ training surface.
 | T17 | Non-production environments `noindex` + credential-gated | staged content leaking into the index is self-inflicted |
 | T18 | 404/410 UX: helpful not-found pages; internal links to removed content cleaned within one sprint | rot spreads through link graphs |
 
-## C — Content and intent
+## C; Content and intent
 
 | # | Technique | Why |
 |---|---|---|
@@ -73,7 +73,7 @@ training surface.
 | C14 | Multimedia where intent demands it (images, video, tools) | surface diversity in the SERP |
 | C15 | UGC (forums, comments) only with moderation and structured markup | Google surfaces moderated UGC; unmoderated UGC is a spam vector |
 
-## G — GEO/AEO (AI-engine visibility)
+## G; GEO/AEO (AI-engine visibility)
 
 | # | Technique | Why |
 |---|---|---|
@@ -86,10 +86,10 @@ training surface.
 | G7 | Citation-share tracking per engine per target query | visibility you do not measure does not compound |
 | G8 | Passages engineered for extraction (definitions, tables, numbered methods) | RAG retrieval is passage-level |
 
-## A — Authority (DR/DA and links)
+## A; Authority (DR/DA and links)
 
 DR (Ahrefs), DA (Moz), TF (Majestic) are **third-party proxies computed
-from link indexes** — none are Google inputs, and chasing the meter
+from link indexes**; none are Google inputs, and chasing the meter
 instead of the referential reality produces the wrong links. Google's
 own public position: it uses no domain-authority metric. What actually
 compounds: independent pages choosing to cite you.
@@ -103,7 +103,7 @@ compounds: independent pages choosing to cite you.
 | A5 | Velocity discipline: steady acquisition; spikes look manufactured | flat-link graphs with spikes correlate with manual actions |
 | A6 | Unlinked-mention reclamation: find brand mentions without links; ask for the link | highest-conversion, zero-risk acquisition |
 | A7 | Broken-link and outbound-404 reclamation in your niche | win-win; scalable with taste |
-| A8 | Relationship links: suppliers, customers, partners, industry bodies — real pages about real relationships | permanent, topical, algorithm-proof |
+| A8 | Relationship links: suppliers, customers, partners, industry bodies; real pages about real relationships | permanent, topical, algorithm-proof |
 | A9 | Guest contributions only where a real editor reviews real expertise | syndicated filler on content farms is a spam-policy surface |
 | A10 | Competitor link-gap analysis (Ahrefs/Majestic intersect) monthly | the acquisition roadmap writes itself |
 | A11 | Toxic-link response: most link penalties are self-inflicted; disavow is a last resort with documented evidence | the disavow file is not a magic eraser |
@@ -112,21 +112,21 @@ compounds: independent pages choosing to cite you.
 | A14 | Architecture as authority: hubs absorb and distribute internal authority deliberately | internal link equity is the only equity you control fully |
 | A15 | Digital-footprint consistency: same name, address, profile set everywhere | entity trust is the slow compounder |
 
-## S — Surfaces (the 2026 SERP)
+## S; Surfaces (the 2026 SERP)
 
 | # | Surface | Eligibility lever |
 |---|---|---|
 | S1 | Preferred Sources (Top Stories + AI Mode/AI Overviews) | user-side selection; promote with Google's publisher button/deeplink; requires fresh content |
 | S2 | AI Overviews / AI Mode citations | SGAI inclusion in Search Console + citability (G3) |
 | S3 | Discover | feed-worthy visuals + E-E-A-T + mobile experience |
-| S4 | Rich results: product/merchant (stars, shipping, returns), recipe, video | structured data validity; **FAQ rich results are restricted to authoritative government/health sites — keep FAQPage markup for structure, expect no SERP real estate** |
+| S4 | Rich results: product/merchant (stars, shipping, returns), recipe, video | structured data validity; **FAQ rich results are restricted to authoritative government/health sites; keep FAQPage markup for structure, expect no SERP real estate** |
 | S5 | Featured snippets / PAA | answer-first formatting; PAA rewards question-coverage |
 | S6 | Video and image carousels | VideoObject/ImageObject + media quality |
 | S7 | Local pack | Google Business Profile (where a physical address exists) |
 | S8 | Top Stories | news sitemap + Article schema + Publisher entity |
 | S9 | Discussions and forums | moderated UGC (ForumPosting/QAPage) |
 
-## M — Measurement
+## M; Measurement
 
 | # | Practice | Cadence |
 |---|---|---|
@@ -139,7 +139,7 @@ compounds: independent pages choosing to cite you.
 | M7 | Log-file review on large sites | quarterly |
 | M8 | Conversion-weighted reporting: rankings are inputs; revenue is the output | every report |
 
-## R — Risk
+## R; Risk
 
 | # | Rule | Why |
 |---|---|---|
@@ -149,7 +149,7 @@ compounds: independent pages choosing to cite you.
 | R4 | Negative-SEO monitoring: link-spike alerts, content-defacement checks, scheduled-index spot checks | cheap insurance; rare but real |
 | R5 | Deindexation triage: GSC coverage first, robots/canonical/render second, penalties third | most "deindexations" are self-inflicted technicals |
 | R6 | Algorithm-event corroboration: never react to one Twitter thread; corroborate across rank trackers + GSC + peers | volatility weeks reward patience |
-| R7 | Refusals are part of the standard: PBNs, purchased links, parasite hosting, cloaking, doorway pages, sneaky redirects — refused by name | a standard that only lists virtues is not a standard |
+| R7 | Refusals are part of the standard: PBNs, purchased links, parasite hosting, cloaking, doorway pages, sneaky redirects; refused by name | a standard that only lists virtues is not a standard |
 
 ## Adoption
 

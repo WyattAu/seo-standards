@@ -1,4 +1,4 @@
-# Risks — the refusal list and the recovery paths
+# Risks; the refusal list and the recovery paths
 
 ## The 2026 spam policies (know them by name)
 
@@ -27,7 +27,7 @@ everything Google penalizes fails the test.
 
 ## Standing monitors
 
-- Link-spike alerts (new referring domains per week) — negative-SEO and
+- Link-spike alerts (new referring domains per week); negative-SEO and
   self-inflicted campaigns both show here first.
 - Content-defacement checks (integrity hashes on money pages).
 - Scheduled-index spot checks: a fixed query set whose expected page

@@ -4,7 +4,7 @@ The canon is SEO-CORE.md; references/ expand it; nothing else is
 normative. Rules for agents editing this repo:
 
 1. Every technique addition gets a number in its pillar and a why.
-2. Refusals are named explicitly — a standard that only lists virtues
+2. Refusals are named explicitly; a standard that only lists virtues
    is not a standard.
 3. No filler: tables for enumerable facts, prose only for causal chains.
 4. Claims about how Google/AI engines behave cite the source (Search

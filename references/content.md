@@ -1,4 +1,4 @@
-# Content — intent, evidence, information gain
+# Content; intent, evidence, information gain
 
 ## The brief (every page starts here)
 
@@ -21,7 +21,7 @@
 - **Trust**: honest dates, sources cited, disclaimers where stakes are
   high, no claims the operation cannot back.
 
-YMYL queries (health, finance, safety — including research-chemical
+YMYL queries (health, finance, safety; including research-chemical
 safety content) are judged at the highest evidence bar.
 
 ## Information gain
