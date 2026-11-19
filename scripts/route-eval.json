@@ -1,0 +1,16 @@
+[
+  {"task": "site migration to a new domain with redirects", "expect": ["T6"]},
+  {"task": "XML sitemap freshness and discovery for deep URLs", "expect": ["T2"]},
+  {"task": "instant discovery on Bing without waiting for crawl", "expect": ["T3"]},
+  {"task": "canonical governance for parameter pages", "expect": ["T4"]},
+  {"task": "hreflang cluster for international targeting", "expect": ["T5"]},
+  {"task": "Core Web Vitals floor on field data", "expect": ["T8"]},
+  {"task": "orphaned pages decaying out of the index", "expect": ["T12"]},
+  {"task": "crawl budget control on faceted URLs", "expect": ["T13"]},
+  {"task": "log-file analysis of bot behavior", "expect": ["T14"]},
+  {"task": "image SEO with modern formats and alt text", "expect": ["T15"]},
+  {"task": "structured data per page type", "expect": ["T16"]},
+  {"task": "E-E-A-T evidence on claim-bearing pages", "expect": ["C4"]},
+  {"task": "per-bot crawler policy for AI engines", "expect": ["G2"]},
+  {"task": "rich results for product pages", "expect": ["S4"]}
+]

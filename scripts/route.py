@@ -60,6 +60,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(add_help=False)
     ap.add_argument("--task")
     ap.add_argument("--pillar", choices=PILLAR_ORDER)
+    ap.add_argument("--eval", nargs="?", const="scripts/route-eval.json", default=None)
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--core", default=str(DEFAULT_CORE))
     a = ap.parse_args()
@@ -76,6 +77,30 @@ def main() -> int:
             for it in cat.get(p, []):
                 print(f"{it['id']}  {it['name']}")
         return 0
+    if a.eval:
+        import json
+        ev = Path(a.eval)
+        if not ev.is_file():
+            print(f"route: eval file not found: {ev}", file=sys.stderr)
+            return 2
+        cases = json.loads(ev.read_text())
+        fails = 0
+        for c in cases:
+            task, expect = c["task"], set(c["expect"])
+            hits: list[dict] = []
+            seen: set[str] = set()
+            for p_ in PILLAR_ORDER:
+                for it in match(cat.get(p_, []), task):
+                    if it["id"] not in seen:
+                        seen.add(it["id"])
+                        hits.append(it)
+            got = {h["id"] for h in hits}
+            ok = expect <= got
+            if not ok:
+                fails += 1
+                print(f"FAIL {task!r}: expect {sorted(expect)}, got {sorted(got)}")
+        print(f"route-eval: {len(cases) - fails}/{len(cases)} pass")
+        return 1 if fails else 0
     if not a.task:
         ap.print_help(file=sys.stderr)
         return 2

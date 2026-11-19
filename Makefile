@@ -19,6 +19,7 @@ lint:
 
 check:
 	@python3 scripts/route.py --list | wc -l | xargs test 60 -le && echo "route check: catalog parses (>= 60 techniques)"
+	@python3 scripts/route.py --eval && echo "route eval: classification regression suite green"
 
 route:
 	@if [ -z "$(T)" ]; then echo "usage: make route T=\"migrating a site\""; else python3 scripts/route.py --task "$(T)"; fi
